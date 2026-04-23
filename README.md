@@ -147,3 +147,18 @@ batch=16
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) - YOLOv8框架
 - [PyTorch](https://pytorch.org/) - 深度学习框架
 ```
+
+### 快速开始 (Quick Start)
+
+使用本项目提供的预训练权重进行推理：
+
+1. 确保安装了依赖：`pip install ultralytics`
+2. 运行预测代码：
+   ```python
+   from ultralytics import YOLO
+   
+   # 加载我们刚刚上传的权重
+   model = YOLO('weights/food_logo_best_v5.pt')
+   
+   # 对单张图片进行检测
+   results = model.predict(source='1.test.jpg', save=True)
