@@ -1,0 +1,26 @@
+name: food_logo_det
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - matplotlib
+  - tqdm
+  - pip:
+      - ultralytics  # 核心检测框架 (支持 YOLO11/12/26)
+      - albumentations  # 针对 Logo 畸变的高级数据增强
+      - opencv-python
+      - supervision  # 强大的检测结果可视化与过滤工具
+      - label-studio  # 如果需要本地标注 Logo 数据
+      - onnx
+      - onnxslim
+      - onnxruntime-gpu  # 用于后期模型部署加速

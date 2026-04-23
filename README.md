@@ -1,5 +1,4 @@
-[README.md](https://github.com/user-attachments/files/26999101/README.md)
-# Food-Logo-Detection# Logo Detection Project
+# Logo Detection Project
 
 一个基于深度学习的logo检测系统，使用YOLOv8模型进行logo识别和定位。
 
